@@ -1,0 +1,6 @@
+/target
+Cargo.lock.bak
+*.otf
+*.ttf
+!fonts/.gitkeep
+.env
