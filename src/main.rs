@@ -213,5 +213,5 @@ fn parse_hex_color(hex: &str) -> Option<resvg::tiny_skia::Color> {
     let r = u8::from_str_radix(&hex[0..2], 16).ok()?;
     let g = u8::from_str_radix(&hex[2..4], 16).ok()?;
     let b = u8::from_str_radix(&hex[4..6], 16).ok()?;
-    resvg::tiny_skia::Color::from_rgba8(r, g, b, 255)
+    Some(resvg::tiny_skia::Color::from_rgba8(r, g, b, 255))
 }
